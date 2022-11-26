@@ -54,6 +54,7 @@ class ViewController: UIViewController {
     //MARK:- Convert location Dictionary array to json and store in UserDefault
     func saveLocationDataInUserDefault() {
         if let json = jsonDict.jsonStringRepresentation {
+            print(json)
             UserDefaults.standard.setValue(json, forKey: "lastLocation")
         }
     }
